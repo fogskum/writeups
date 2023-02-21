@@ -1,4 +1,4 @@
-# LazyAdmin
+# LazyAdmin - DRAFT
 
 This is an easy box from TryHackMe. The goal is to find user and root flags.
 
