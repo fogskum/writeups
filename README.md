@@ -1,2 +1,3 @@
-# writeups
-Write ups of CTFs
+# Writeups
+
+[LazyAdmin](tryhackme/LazyAdmin/README.md)
