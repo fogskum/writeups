@@ -6,7 +6,7 @@ This is an easy box from TryHackMe. The goal is to find user and root flags.
 We start by scanning for open ports:
 
 ```console
-foo@bar$ sudo nmap -sC -sV -oN nmap/init <target_ip>
+hacker@kali$ sudo nmap -sC -sV -oN nmap/init <target_ip>
 ```
 ```
 -sC for non-intrusive default scripts
@@ -22,7 +22,7 @@ We can we SSH on port 22 and Apache running on port 80. Let's navigate to the si
 
 Let's enumeration for hidden files and directories using e.g., gobuster:
 ```console
-foo@bar$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
+hacker@kali$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
 ```
 **TODO: add result**
 
@@ -32,8 +32,8 @@ The only interesting here is the /content folder. Let go there and have a look.
 
 We run gobuster again on the /content folder:
 ```console
-foo@bar$ gobuster dir -u http://<target_ip>/content -w /usr/share/wordlists/dirb/common.txt
+hacker@kali$ gobuster dir -u http://<target_ip>/content -w /usr/share/wordlists/dirb/common.txt
 ```
-
+A lot more interesting results! /content/as is a login page for SweetRice CMS. Let's come back to this after investigating the results from gobuster. Looking in /content/inc we see 
 
 
