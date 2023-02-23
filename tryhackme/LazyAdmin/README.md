@@ -14,9 +14,7 @@ hacker@parrot$ sudo nmap -sC -sV -oN nmap/init <target_ip>
 -oN for output as normal format
 ```
 
-**TODO: add result**
-
-We can see SSH on port 22 and Apache running on port 80. Let's navigate to the site using the browser to take a look. We can see that the site is using SweetRice CMS.
+Nmap comes back with SSH on port 22 and Apache running on port 80. Let's start exploring the site using the browser. We can see that the site is using SweetRice CMS.
 
 **TODO: add screenshot**
 
