@@ -26,7 +26,7 @@ hacker@parrot$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/c
 
 The only interesting here is the /content folder. Let go there and have a look.
 
-**TODO: add result**
+![admin](sr_cms.png)
 
 We run gobuster again on the /content folder:
 ```console
