@@ -22,7 +22,7 @@ Not much to see, just the default Apache page. Let's enumeration for hidden file
 hacker@parrot$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
 ```
 
-![gobuster](gobuster.png)
+
 
 The only interesting here is the /content folder. Let go there and have a look.
 
@@ -32,7 +32,7 @@ Turns out to be a CMS system called SweetRice. The tells us there are more conte
 ```console
 hacker@parrot$ gobuster dir -u http://<target_ip>/content -w /usr/share/wordlists/dirb/common.txt
 ```
-![gobuster2](gobuster.png)
+![gobuster2](gobuster2.png)
 
 A lot more interesting results!
 
