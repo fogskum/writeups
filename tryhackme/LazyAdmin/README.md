@@ -16,11 +16,13 @@ hacker@parrot$ sudo nmap -sC -sV -oN nmap/init <target_ip>
 
 Nmap comes back with SSH on port 22 and Apache running on port 80. Let's start exploring the site using the browser.
 ![apache.png](apache.png)
+
 Not much to see, just the default Apache page. Let's enumeration for hidden files and directories using e.g., gobuster:
 ```console
 hacker@parrot$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
 ```
 
+![gobuster](gubuster.png)
 
 The only interesting here is the /content folder. Let go there and have a look.
 
