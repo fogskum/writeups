@@ -22,7 +22,7 @@ Not much to see, just the default Apache page. Let's enumeration for hidden file
 hacker@parrot$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
 ```
 
-![gobuster](gubuster.png)
+![gobuster](gobuster.png)
 
 The only interesting here is the /content folder. Let go there and have a look.
 
