@@ -26,12 +26,19 @@ hacker@parrot$ gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/c
 
 The only interesting here is the /content folder. Let go there and have a look.
 
-![admin](sr_cms.png)
+![sr](sweetrice.png)
 
-We run gobuster again on the /content folder:
+Turns out to be a CMS system called SweetRice. The tells us there are more content in this subfolder so let's run gobuster again on the /content folder:
 ```console
 hacker@parrot$ gobuster dir -u http://<target_ip>/content -w /usr/share/wordlists/dirb/common.txt
 ```
-A lot more interesting results! /content/as is a login page for SweetRice CMS. Let's come back to this after investigating the results from gobuster. Looking in /content/inc we see 
+![gobuster2](gobuster.png)
+
+A lot more interesting results!
+
+![sr](sweetrice_login.png)
+
+/content/as turns out to be a login page for SweetRice CMS but we con't have any credentials. Trying the obvious admin:admin does not work so let's come back to this after investigating the results from gobuster. Looking in /content/inc we see.
+
 
 
